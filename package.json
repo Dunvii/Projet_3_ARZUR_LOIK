@@ -1,0 +1,22 @@
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./css/sass/main.scss:css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dunvii/Projet_3_ARZUR_LOIK.git"
+  },
+  "author": "ARZUR Loïk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dunvii/Projet_3_ARZUR_LOIK/issues"
+  },
+  "homepage": "https://github.com/Dunvii/Projet_3_ARZUR_LOIK#readme",
+  "dependencies": {
+    "sass": "^1.0.0"
+  }
+}
