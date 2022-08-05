@@ -319,6 +319,30 @@ body {
   font-weight: normal;
 }
 
+h1 {
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -345,6 +369,57 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #f5f5f5;
+  padding: 5% 0% 10% 0%;
+}
+.exploration__btn {
+  border-radius: 30px;
+  border: none;
+  padding: 20px;
+  color: white;
+  background-color: #9356DC;
+  font-size: 15px;
+}
+
+.exploration > h1 {
+  text-align: center;
+  width: 80%;
+}
+
+.exploration > p {
+  text-align: center;
+  width: 80%;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+}
+.step__precard {
+  display: flex;
+  flex-flow: row wrap;
+  list-style-type: none;
+}
+
+.step__precard > li {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+.step__precard > li > div {
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  padding: 10px 10px;
+}
+.step__precard > li > span {
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  background-color: #9356DC;
 }
 
 /*# sourceMappingURL=main.css.map */
