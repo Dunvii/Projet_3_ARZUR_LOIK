@@ -1,6 +1,7 @@
-@use 'base/normalize';
+@use 'base/reset';
 @use 'base/font';
-@use 'layouts/header.scss';
-@use 'layouts/footer.scss';
+@use 'layouts/header';
+@use 'layouts/footer';
+@use 'utils/colors';
 @use 'pages/accueil';
 

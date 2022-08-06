@@ -9,6 +9,7 @@ header {
     width: 100%;
     height: 100%;
     justify-content: center;
+    
     &__logo {
         background-color: white;
         padding: 20px 0px;
@@ -17,5 +18,6 @@ header {
         background-color: #eaeaea;
         padding: 20px 0px;
         gap: 5px;
+        box-shadow: inset 0px 0px 7px -4px rgba(0,0,0,1);
     }
 }
