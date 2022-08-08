@@ -216,7 +216,7 @@ footer .fa-handshake-angle {
 .step__precard > li div:hover {
   background-color: #f2eafb;
 }
-.step__precard > li div:hover i {
+.step__precard > li div:hover .fa-solid {
   color: #9356DC;
 }
 .step__precard > li > span {
