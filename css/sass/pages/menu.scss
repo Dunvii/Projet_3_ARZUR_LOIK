@@ -1,2 +1,17 @@
 @use "../utils/colors" as *;
 
+.menu__top {
+    height: 250px;
+    width: 100%;
+    > img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    
+}

@@ -102,7 +102,7 @@ header {
   flex-direction: row;
   width: 100%;
   height: 100%;
-  justify-content: center;
+  align-items: center;
 }
 .top__logo {
   background-color: white;
@@ -113,6 +113,9 @@ header {
   padding: 20px 0px;
   gap: 5px;
   box-shadow: inset 0px 0px 7px -4px rgb(0, 0, 0);
+}
+.top > img {
+  align-self: center;
 }
 
 footer {
@@ -311,6 +314,21 @@ footer .fa-handshake-angle {
 }
 .restaurants__card__bottom > h4 {
   font-size: 18px;
+}
+
+.menu__top {
+  height: 250px;
+  width: 100%;
+}
+.menu__top > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=main.css.map */
