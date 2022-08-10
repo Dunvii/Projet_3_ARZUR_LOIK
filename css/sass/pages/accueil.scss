@@ -1,5 +1,32 @@
 @use "../utils/colors" as *;
 
+.loader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background: rgb(147,86,220);
+    background: linear-gradient(180deg, rgba(147,86,220,1) 12%, rgba(255,121,218,1) 91%);
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    opacity: 100%;
+    animation: show_loader 1s forwards;
+    animation-delay: 2s;
+    &__logo {
+        color: white;
+        transform: scale(0);
+        animation: show_logo 2500ms;
+    }
+    &__text {
+        color: white;
+        font-size: 20px;
+        transform: scale(0);
+        animation: show_title 2500ms;
+    }
+}
+
 .exploration {
     display: flex;
     flex-direction: column;
@@ -10,11 +37,17 @@
     &__btn {
         border-radius: 30px;
         border : none;
-        padding: 20px;
+        padding: 15px;
         color: white;
-        background: rgb(255,121,218);
         background: linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
         font-size: 15px;
+        font-weight: bold;
+        &:hover {
+        transform: scale(1.05);
+        background: linear-gradient(180deg, lighten(rgba(255,121,218,1), 5%) 0%, lighten(rgba(147,86,220,1), 5%) 100%);
+        transition-property: transform;
+        transition-duration: 200ms;
+        }
     }
 }
 
@@ -34,12 +67,17 @@
     flex-direction: column;
     margin: 2%;
     gap: 30px;
-    padding: 20% 0%;
+    padding: 10% 0%;
     &__precard {
         display: flex;
+        justify-content: center;
         flex-flow: row wrap;
         list-style-type: none;
         gap: 20px;
+    }
+    > h1 {
+        margin-left: 5%;
+        font-weight: bold;
     }
 }
 
@@ -48,15 +86,18 @@
     flex-direction: row;
     justify-content: center;
     width: 100%;
+    position: relative;
     > div {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         border: none;
         background-color: map-get($colors, color-background_1);
         border-radius: 20px;
         padding: 25px;
         width: 80%;
-        > i {
+        gap: 20px;
+        box-shadow: 0px 0px 19px -3px rgba(0,0,0,0.5);
+        i {
             color: grey;
         }
     }
@@ -68,13 +109,13 @@
     }
     > span {
         display: flex;
-        align-items: flex-end;
+        align-items: center;
         justify-content: center;
         background-color: map-get($colors, color-primary);
         color: white;
         position: relative;
-        padding: 5px;
-        left: 15px;
+        padding: 2px;
+        left: 10px;
         bottom: -20px;
         height: 20px;
         width: 20px;
@@ -92,6 +133,7 @@
     &__title {
         display: flex;
         flex-direction: column;
+        margin-left: 5%;
     }
     &__precard {
         display: flex;
@@ -139,7 +181,7 @@
             position: relative;
             gap: 5px;
             margin-left: 10px;
-            > i {
+            &__icon {
                 display: flex;
                 position: absolute;
                 height: 20px;
@@ -147,16 +189,26 @@
                 right: 20px;
                 font-size: 20px;
             }
-            > i:hover {
-                color: rgb(147,86,220);
-                color: linear-gradient(180deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+            &__icon:hover .fa-regular,
+            &__icon .fa-solid {
+                display: none;
             }
+
+            &__icon:hover .fa-solid {
+                display: inline;
+                background: rgb(147,86,220);
+                background: linear-gradient(180deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                transition: all 0.9s;
+            }
+
             > h3 {
                 font-weight: bold;
             }
 
             > h4 {
-                font-size: 18px;
+                font-size: 15px;
             }
         }
     }

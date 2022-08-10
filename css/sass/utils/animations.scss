@@ -1,0 +1,49 @@
+@keyframes show_loader{
+    from {
+        opacity: 100%;
+    }
+    to {
+        opacity: 0%;
+        visibility: hidden;
+    }
+}
+
+@keyframes show_title {
+    0% {
+        transform: scale(1);
+        transform: translateY(150px);
+    }
+    25% {
+        transform: scale(1.25);
+    }
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+        transform: translateY(0px);
+    }
+}
+
+@keyframes show_logo {
+    0% {
+        transform: scale(1);
+        transform: translateY(-150px);
+    }
+    25% {
+        transform: scale(1.25);
+    }
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+        transform: translateY(0px);
+    }
+}
