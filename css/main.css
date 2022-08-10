@@ -105,8 +105,19 @@ header {
   justify-content: center;
 }
 .top__logo {
+  display: flex;
   background-color: white;
   padding: 20px 0px;
+  position: relative;
+}
+.top__logo > a {
+  text-decoration: none;
+  color: black;
+}
+.top__logo .fa-arrow-left {
+  position: absolute;
+  left: 5%;
+  top: 40%;
 }
 .top__gps {
   background-color: #eaeaea;
@@ -199,6 +210,22 @@ footer .fa-handshake-angle {
     transform: translateY(0px);
   }
 }
+@keyframes show_truck_freestyle {
+  from {
+    transform: translate(-13vh, 2vh);
+  }
+  to {
+    transform: translate(13vh, 2vh);
+  }
+}
+@keyframes show_content_freestyle {
+  from {
+    transform: translate(-12vh, -8vh);
+  }
+  to {
+    transform: translate(14vh, -8vh);
+  }
+}
 .loader {
   display: flex;
   flex-direction: column;
@@ -224,6 +251,18 @@ footer .fa-handshake-angle {
   font-size: 20px;
   transform: scale(0);
   animation: show_title 2500ms;
+}
+.loader__animations__camion .fa-truck {
+  color: white;
+  font-size: 100px;
+  transform: translate(-13vh, 2vh);
+  animation: show_truck_freestyle 2500ms;
+}
+.loader__animations__content .fa-bowl-food {
+  color: #99E2D0;
+  font-size: 50px;
+  transform: translate(-12vh, -8vh);
+  animation: show_content_freestyle 2500ms;
 }
 
 .exploration {

@@ -25,6 +25,20 @@
         transform: scale(0);
         animation: show_title 2500ms;
     }
+    &__animations {
+    &__camion .fa-truck{
+        color: white;
+        font-size: 100px;
+        transform: translate(-13vh, 2vh);
+        animation: show_truck_freestyle 2500ms;
+    } 
+    &__content .fa-bowl-food{
+        color: map-get($colors, color-accent);
+        font-size: 50px;
+        transform: translate(-12vh,-8vh);
+        animation: show_content_freestyle 2500ms;
+    }      
+    }
 }
 
 .exploration {

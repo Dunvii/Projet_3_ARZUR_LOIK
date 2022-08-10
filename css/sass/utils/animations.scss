@@ -47,3 +47,21 @@
         transform: translateY(0px);
     }
 }
+
+@keyframes show_truck_freestyle {
+    from {
+        transform: translate(-13vh, 2vh);
+    }
+    to {
+        transform: translate(13vh, 2vh);
+    }
+}
+
+@keyframes show_content_freestyle {
+    from {
+        transform: translate(-12vh,-8vh);
+    }
+    to {
+        transform: translate(14vh,-8vh);
+    }
+}

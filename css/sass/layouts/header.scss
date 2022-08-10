@@ -10,8 +10,19 @@ header {
     align-items: center;
     justify-content: center;
     &__logo {
+        display: flex;
         background-color: white;
         padding: 20px 0px;
+        position: relative;
+        > a {
+            text-decoration: none;
+            color: black;
+        }
+        .fa-arrow-left {
+            position: absolute;
+            left: 5%;
+            top: 40%;
+        }
     }
     &__gps {
         background-color: #eaeaea;
