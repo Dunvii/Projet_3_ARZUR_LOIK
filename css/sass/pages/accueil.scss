@@ -48,21 +48,6 @@
     background-color: map-get($colors, color-background_1);
     padding: 5% 0% 10% 0%;
     gap: 20px;
-    &__btn {
-        border-radius: 30px;
-        border : none;
-        padding: 15px;
-        color: white;
-        background: linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
-        font-size: 15px;
-        font-weight: bold;
-        &:hover {
-        transform: scale(1.05);
-        background: linear-gradient(180deg, lighten(rgba(255,121,218,1), 5%) 0%, lighten(rgba(147,86,220,1), 5%) 100%);
-        transition-property: transform;
-        transition-duration: 200ms;
-        }
-    }
 }
 
 .exploration > h1 {

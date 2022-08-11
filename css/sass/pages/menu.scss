@@ -13,5 +13,93 @@
 .menu {
     display: flex;
     flex-direction: column;
-    
+    position: relative;
+    background-color: map-get($colors, color-background_1);
+    &__title {
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 5% 0%;
+        top: -40px;
+        border-radius: 35px 35px 0px 0px;
+        background-color: map-get($colors, color-background_1);
+        &__icon {
+            display: flex;
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            right: 20px;
+            font-size: 20px;
+        }
+        &__icon:hover .fa-regular,
+        &__icon .fa-solid {
+            display: none;
+        }
+
+        &__icon:hover .fa-solid {
+            display: inline;
+            background: rgb(147,86,220);
+            background: linear-gradient(180deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: all 0.9s;
+        }
+    }
+    &__box {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin: 0% 5%;
+        &__articles {
+            display: flex;
+            flex-direction: row;
+            background-color: map-get($colors, color-background_2);
+            border-radius: 10px;
+            padding: 5px 0px;
+            &__title  {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                width: 50%;
+                flex-grow: 1;
+                > h4 {
+                overflow: hidden;
+                white-space: nowrap; 
+                text-overflow : ellipsis;
+                }
+            }
+            &__price {
+                display: flex;
+                align-items: flex-end;
+                width: 50px;
+                justify-content: flex-end;
+            }
+            &__checkbox {
+                display: none
+            }
+        }
+    }
+    h2 {
+        text-transform: uppercase;
+    }
+    h2::after {
+        display: flex;
+        content: '';
+        border-bottom: 3px solid map-get($colors, color-accent);
+        width: 55px;
+        margin-top: 5px;
+    }
+    &:hover .menu__box__articles__checkbox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 10%;
+        color: white;
+        background-color: map-get($colors , color-accent);
+        border-radius: 0px 10px 10px 0px;
+    }
+    &__button {
+        display: flex;
+        justify-content: center;
+    }
 }
