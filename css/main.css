@@ -210,20 +210,30 @@ footer .fa-handshake-angle {
     transform: translateY(0px);
   }
 }
-@keyframes show_truck_freestyle {
+@keyframes show_all_freestyle {
   from {
-    transform: translate(-13vh, 2vh);
+    transform: rotate(345deg);
   }
   to {
-    transform: translate(13vh, 2vh);
+    transform: rotate(375deg);
+  }
+}
+@keyframes show_truck_freestyle {
+  from {
+    transform: translate(-13vh, 2vh) rotate(345deg);
+    opacity: 100%;
+  }
+  to {
+    transform: translate(13vh, 2vh) rotate(375deg);
   }
 }
 @keyframes show_content_freestyle {
   from {
-    transform: translate(-12vh, -8vh);
+    transform: translate(-12vh, -8vh) rotate(345deg);
+    opacity: 100%;
   }
   to {
-    transform: translate(14vh, -8vh);
+    transform: translate(14vh, -9vh) rotate(375deg);
   }
 }
 .loader {
