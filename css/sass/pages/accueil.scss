@@ -12,31 +12,31 @@
     width: 100%;
     z-index: 1;
     opacity: 100%;
-    animation: show_loader 1s forwards;
-    animation-delay: 2s;
+    animation: show_loader 2s forwards;
+    animation-delay: 1s;
     &__logo {
         color: white;
         transform: scale(0);
-        animation: show_logo 2500ms;
+        animation: show_logo 2000ms;
     }
     &__text {
         color: white;
         font-size: 20px;
         transform: scale(0);
-        animation: show_title 2500ms;
+        animation: show_title 2000ms;
     }
     &__animations {
     &__camion .fa-truck{
         color: white;
         font-size: 100px;
         transform: translate(-13vh, 2vh);
-        animation: show_truck_freestyle 2500ms;
+        animation: show_truck_freestyle 2000ms;
     } 
     &__content .fa-bowl-food{
         color: map-get($colors, color-accent);
         font-size: 50px;
         transform: translate(-12vh,-8vh);
-        animation: show_content_freestyle 2500ms;
+        animation: show_content_freestyle 2000ms;
     }      
     }
 }
