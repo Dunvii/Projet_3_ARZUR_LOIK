@@ -76,3 +76,21 @@
         transform: translate(14vh,-9vh) rotate(375deg);
     }
 }
+
+@keyframes show_checkbox {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 10%;
+    }
+}
+
+@keyframes show_checkbox_icon {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}

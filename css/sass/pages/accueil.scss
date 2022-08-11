@@ -199,7 +199,7 @@
                 background: linear-gradient(180deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
-                transition: all 0.9s;
+                animation: show_content_freestyle 2000ms;
             }
 
             > h3 {
