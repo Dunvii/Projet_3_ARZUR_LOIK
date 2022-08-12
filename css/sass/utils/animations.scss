@@ -79,19 +79,20 @@
 
 @keyframes show_checkbox {
     from {
-        width: 0%;
+        width: 0;
     }
     to {
-        width: 15%;
+        width: 50px;
     }
 }
-
 @keyframes show_checkbox_icon {
     from {
         transform: rotate(0deg);
+        opacity: 0;
     }
     to {
         transform: rotate(360deg);
+        opacity: 1;
     }
 }
 

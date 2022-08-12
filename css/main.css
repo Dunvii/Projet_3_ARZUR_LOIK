@@ -134,7 +134,6 @@ footer {
   background-color: #353535;
   display: flex;
   flex-direction: column;
-  width: 100%;
   gap: 20px;
   padding: 5% 0%;
 }
@@ -167,6 +166,25 @@ footer .fa-handshake-angle {
   font-size: 11px;
 }
 
+@media screen and (min-width: 1024px) {
+  footer {
+    align-items: center;
+    gap: 50px;
+    padding: 2% 0%;
+  }
+  footer > ul {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-left: 0%;
+  }
+  footer > li {
+    width: 25%;
+  }
+  footer > img {
+    height: 50px;
+  }
+}
 @keyframes show_loader {
   from {
     opacity: 100%;
@@ -242,18 +260,20 @@ footer .fa-handshake-angle {
 }
 @keyframes show_checkbox {
   from {
-    width: 0%;
+    width: 0;
   }
   to {
-    width: 15%;
+    width: 50px;
   }
 }
 @keyframes show_checkbox_icon {
   from {
     transform: rotate(0deg);
+    opacity: 0;
   }
   to {
     transform: rotate(360deg);
+    opacity: 1;
   }
 }
 @keyframes show_cards {
@@ -275,14 +295,15 @@ footer .fa-handshake-angle {
   font-size: 15px;
   font-weight: bold;
 }
-.btn:hover {
-  transform: scale(1.05);
-  background: linear-gradient(180deg, #ff93e1 0%, #a16be0 100%);
-  transition-property: transform;
-  transition-duration: 200ms;
-}
 .btn__menu {
   padding: 15px 40px;
+  opacity: 0;
+}
+.btn:hover {
+  background: linear-gradient(180deg, #ff93e1 0%, #a16be0 100%);
+  transform: scale(1.05);
+  transition-property: transform;
+  transition-duration: 200ms;
 }
 
 .loader {
@@ -434,6 +455,11 @@ footer .fa-handshake-angle {
   background-color: white;
   box-shadow: 0px 0px 19px -3px rgba(0, 0, 0, 0.1);
 }
+.restaurants__card:hover {
+  transform: scale(1.05);
+  transition-property: transform;
+  transition-duration: 200ms;
+}
 .restaurants__card__img {
   border-radius: 10px;
   height: 75%;
@@ -492,6 +518,76 @@ footer .fa-handshake-angle {
   font-size: 15px;
 }
 
+.box__show1 {
+  animation: show_cards 1000ms forwards;
+  animation-delay: 0.4s;
+}
+
+.box__show2 {
+  animation: show_cards 1000ms forwards;
+  animation-delay: 0.8s;
+}
+
+.box__show3 {
+  animation: show_cards 1000ms forwards;
+  animation-delay: 1.2s;
+}
+
+.articles__show1 {
+  animation: show_cards 1000ms forwards;
+  animation-delay: 0.2s;
+}
+
+.articles__show2 {
+  animation: show_cards 1000ms forwards;
+  animation-delay: 0.4s;
+}
+
+.articles__show3 {
+  animation: show_cards 1000ms forwards;
+  animation-delay: 0.6s;
+}
+
+.articles__show4 {
+  animation: show_cards 1000ms forwards;
+  animation-delay: 0.8s;
+}
+
+.articles__show5 {
+  animation: show_cards 1000ms forwards;
+  animation-delay: 1s;
+}
+
+.articles__show6 {
+  animation: show_cards 1000ms forwards;
+  animation-delay: 1.2s;
+}
+
+.articles__show7 {
+  animation: show_cards 1000ms forwards;
+  animation-delay: 1.4s;
+}
+
+.articles__show8 {
+  animation: show_cards 1000ms forwards;
+  animation-delay: 1.6s;
+}
+
+.articles__show9 {
+  animation: show_cards 1000ms forwards;
+  animation-delay: 1.8s;
+}
+
+.articles__show10 {
+  animation: show_cards 1000ms forwards;
+  animation-delay: 2s;
+}
+
+.articles__show11 {
+  animation: show_cards 1000ms forwards;
+  animation-delay: 2.2s;
+}
+
 .menu__top {
   height: 250px;
   width: 100%;
@@ -543,18 +639,6 @@ footer .fa-handshake-angle {
   margin: 5% 5%;
   opacity: 0;
 }
-.menu__box__show1 {
-  animation: show_cards 1000ms forwards;
-  animation-delay: 0.4s;
-}
-.menu__box__show2 {
-  animation: show_cards 1000ms forwards;
-  animation-delay: 0.8s;
-}
-.menu__box__show3 {
-  animation: show_cards 1000ms forwards;
-  animation-delay: 1.2s;
-}
 .menu__box__articles {
   display: flex;
   flex-direction: row;
@@ -565,55 +649,15 @@ footer .fa-handshake-angle {
   box-shadow: 5px 5px 18px 0px rgba(0, 0, 0, 0.07);
   opacity: 0;
 }
-.menu__box__articles__show1 {
-  animation: show_cards 1000ms forwards;
-  animation-delay: 0.2s;
-}
-.menu__box__articles__show2 {
-  animation: show_cards 1000ms forwards;
-  animation-delay: 0.4s;
-}
-.menu__box__articles__show3 {
-  animation: show_cards 1000ms forwards;
-  animation-delay: 0.6s;
-}
-.menu__box__articles__show4 {
-  animation: show_cards 1000ms forwards;
-  animation-delay: 0.8s;
-}
-.menu__box__articles__show5 {
-  animation: show_cards 1000ms forwards;
-  animation-delay: 1s;
-}
-.menu__box__articles__show6 {
-  animation: show_cards 1000ms forwards;
-  animation-delay: 1.2s;
-}
-.menu__box__articles__show7 {
-  animation: show_cards 1000ms forwards;
-  animation-delay: 1.4s;
-}
-.menu__box__articles__show8 {
-  animation: show_cards 1000ms forwards;
-  animation-delay: 1.6s;
-}
-.menu__box__articles__show9 {
-  animation: show_cards 1000ms forwards;
-  animation-delay: 1.8s;
-}
-.menu__box__articles__show10 {
-  animation: show_cards 1000ms forwards;
-  animation-delay: 2s;
-}
 .menu__box__articles:hover .menu__box__articles__checkbox {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 15%;
+  width: 0;
   color: white;
   background-color: #99E2D0;
   border-radius: 0px 10px 10px 0px;
-  animation: show_checkbox 1000ms;
+  animation: show_checkbox 1000ms forwards;
   cursor: pointer;
 }
 .menu__box__articles:hover .fa-circle-check {
@@ -623,7 +667,7 @@ footer .fa-handshake-angle {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 5%;
+  margin-left: 15px;
   gap: 5px;
   width: 50%;
   flex-grow: 1;
@@ -644,7 +688,7 @@ footer .fa-handshake-angle {
   width: 50px;
   justify-content: flex-end;
   font-weight: bold;
-  margin: 0% 4% 3% 0%;
+  margin: 0% 4% 10px 0%;
   font-size: 14px;
 }
 .menu__box__articles__checkbox {
@@ -665,6 +709,40 @@ footer .fa-handshake-angle {
   display: flex;
   margin: 10% 0%;
   justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .menu__box {
+    margin: 2% 5%;
+  }
+  .menu__button {
+    margin: 5% 0%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu {
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 0;
+  }
+  .menu__title {
+    width: 100%;
+    top: -30px;
+    padding: 2% 0% 0% 8%;
+    gap: 20px;
+  }
+  .menu__title__icon {
+    position: static;
+  }
+  .menu__box {
+    width: 25%;
+    margin: 2%;
+  }
+  .menu__button {
+    width: 100%;
+    margin: 2% 0%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
