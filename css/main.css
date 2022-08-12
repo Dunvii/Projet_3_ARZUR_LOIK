@@ -245,15 +245,25 @@ footer .fa-handshake-angle {
     width: 0%;
   }
   to {
-    width: 10%;
+    width: 15%;
   }
 }
 @keyframes show_checkbox_icon {
   from {
-    transform: rotate(360deg);
+    transform: rotate(0deg);
   }
   to {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes show_cards {
+  from {
+    transform: translateY(-50px);
+    opacity: 0%;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 100%;
   }
 }
 .btn {
@@ -502,8 +512,8 @@ footer .fa-handshake-angle {
   display: flex;
   align-items: center;
   position: relative;
-  padding: 5% 0%;
-  top: -40px;
+  padding: 5% 5% 0% 5%;
+  top: -20px;
   border-radius: 35px 35px 0px 0px;
   background-color: #f5f5f5;
 }
@@ -530,23 +540,28 @@ footer .fa-handshake-angle {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  margin: 0% 5%;
+  margin: 5% 5%;
 }
 .menu__box__articles {
   display: flex;
   flex-direction: row;
+  height: 50px;
   background-color: white;
   border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 18px 0px rgba(0, 0, 0, 0.07);
+  box-shadow: 5px 5px 18px 0px rgba(0, 0, 0, 0.07);
+  animation: show_cards 2500ms;
 }
 .menu__box__articles:hover .menu__box__articles__checkbox {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 10%;
+  width: 15%;
   color: white;
   background-color: #99E2D0;
   border-radius: 0px 10px 10px 0px;
   animation: show_checkbox 1000ms;
+  cursor: pointer;
 }
 .menu__box__articles:hover .fa-circle-check {
   animation: show_checkbox_icon 1000ms;
@@ -554,20 +569,30 @@ footer .fa-handshake-angle {
 .menu__box__articles__title {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  justify-content: center;
+  margin-left: 5%;
+  gap: 5px;
   width: 50%;
   flex-grow: 1;
+}
+.menu__box__articles__title > h3 {
+  font-size: 14px;
+  font-weight: bold;
 }
 .menu__box__articles__title > h4 {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  font-size: 12px;
 }
 .menu__box__articles__price {
   display: flex;
   align-items: flex-end;
   width: 50px;
   justify-content: flex-end;
+  font-weight: bold;
+  margin: 0% 4% 3% 0%;
+  font-size: 14px;
 }
 .menu__box__articles__checkbox {
   display: none;
@@ -585,6 +610,7 @@ footer .fa-handshake-angle {
 }
 .menu__button {
   display: flex;
+  margin: 10% 0%;
   justify-content: center;
 }
 
