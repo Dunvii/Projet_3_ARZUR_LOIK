@@ -93,7 +93,7 @@ h6 {
 }
 
 .title {
-  font-family: "ShrikhandGujarati", sans-serif;
+  font-family: "ShrikhandGujarati";
 }
 
 header {
@@ -286,6 +286,16 @@ footer .fa-handshake-angle {
     transform: translateX(0px);
   }
 }
+@keyframes hearth {
+  from {
+    opacity: 0%;
+    transform: scale(0);
+  }
+  to {
+    opacity: 100%;
+    transform: scale(1);
+  }
+}
 .btn {
   border-radius: 30px;
   border: none;
@@ -456,7 +466,7 @@ footer .fa-handshake-angle {
   box-shadow: 0px 0px 19px -3px rgba(0, 0, 0, 0.1);
 }
 .restaurants__card:hover {
-  transform: scale(1.05);
+  transform: scale(1.05) 200ms;
   transition-property: transform;
   transition-duration: 200ms;
 }
@@ -509,7 +519,7 @@ footer .fa-handshake-angle {
   background: linear-gradient(180deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: show_content_freestyle 2000ms;
+  animation: hearth 500ms forwards;
 }
 .restaurants__card__bottom > h3 {
   font-weight: bold;
@@ -518,6 +528,38 @@ footer .fa-handshake-angle {
   font-size: 15px;
 }
 
+@media screen and (min-width: 768px) {
+  .restaurants__precard {
+    flex-flow: row wrap;
+    gap: 50px;
+    justify-content: center;
+  }
+  .restaurants__card {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .exploration {
+    padding: 5% 0% 5% 0%;
+  }
+  .step {
+    padding: 0% 0%;
+  }
+  .step__precard {
+    flex-direction: row;
+  }
+  .step__precard > li {
+    width: 30%;
+  }
+  .restaurants__precard {
+    flex-flow: row;
+    justify-content: space-around;
+    margin: 0% 2%;
+  }
+  .restaurants__title {
+    margin-left: 2%;
+  }
+}
 .box__show1 {
   animation: show_cards 1000ms forwards;
   animation-delay: 0.4s;

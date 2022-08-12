@@ -150,7 +150,7 @@
         background-color: white;
         box-shadow: 0px 0px 19px -3px rgba(0,0,0,0.1);
         &:hover {
-            transform: scale(1.05);
+            transform: scale(1.05) 200ms;
             transition-property: transform;
             transition-duration: 200ms;
         }
@@ -204,7 +204,7 @@
                 background: linear-gradient(180deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
-                animation: show_content_freestyle 2000ms;
+                animation: hearth 500ms forwards;
             }
 
             > h3 {
@@ -218,4 +218,45 @@
     }
 }
 
+@media screen and (min-width: 768px) {
+    .restaurants {
+        &__precard {
+            flex-flow: row wrap;
+            gap: 50px;
+            justify-content: center;
+        }
+        &__card {
+            width: 40%;
+        }
+    }
+}
 
+@media screen and (min-width: 1024px) {
+
+    .exploration {
+        padding: 5% 0% 5% 0%;
+    }
+
+    .step {
+        padding: 0% 0%;
+        &__precard {
+            flex-direction: row;
+            > li {
+                width: 30%;
+            }
+        }
+    }
+        
+    .restaurants {
+        &__precard {
+            flex-flow: row;
+            justify-content: space-around;
+            margin: 0% 2%;
+        }
+        &__title {
+            margin-left: 2%;
+        }
+        &__card {
+        }
+    }
+}
