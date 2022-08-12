@@ -145,7 +145,7 @@ footer > ul {
   gap: 15px;
   margin-left: 4%;
 }
-footer > ul > a {
+footer > ul a {
   text-decoration: none;
   color: white;
 }
@@ -314,6 +314,7 @@ footer .fa-handshake-angle {
   transform: scale(1.05);
   transition-property: transform;
   transition-duration: 200ms;
+  cursor: pointer;
 }
 
 .loader {
@@ -466,7 +467,7 @@ footer .fa-handshake-angle {
   box-shadow: 0px 0px 19px -3px rgba(0, 0, 0, 0.1);
 }
 .restaurants__card:hover {
-  transform: scale(1.05) 200ms;
+  transform: scale(1.05);
   transition-property: transform;
   transition-duration: 200ms;
 }
@@ -520,6 +521,7 @@ footer .fa-handshake-angle {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: hearth 500ms forwards;
+  cursor: pointer;
 }
 .restaurants__card__bottom > h3 {
   font-weight: bold;
