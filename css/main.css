@@ -258,12 +258,12 @@ footer .fa-handshake-angle {
 }
 @keyframes show_cards {
   from {
-    transform: translateY(-50px);
     opacity: 0%;
+    transform: translateX(-30px);
   }
   to {
-    transform: translateY(0px);
     opacity: 100%;
+    transform: translateX(0px);
   }
 }
 .btn {
@@ -541,6 +541,19 @@ footer .fa-handshake-angle {
   flex-direction: column;
   gap: 15px;
   margin: 5% 5%;
+  opacity: 0;
+}
+.menu__box__show1 {
+  animation: show_cards 1000ms forwards;
+  animation-delay: 0.2s;
+}
+.menu__box__show2 {
+  animation: show_cards 1000ms forwards;
+  animation-delay: 0.4s;
+}
+.menu__box__show3 {
+  animation: show_cards 1000ms forwards;
+  animation-delay: 0.6s;
 }
 .menu__box__articles {
   display: flex;
@@ -550,7 +563,47 @@ footer .fa-handshake-angle {
   border-radius: 10px;
   -webkit-box-shadow: 5px 5px 18px 0px rgba(0, 0, 0, 0.07);
   box-shadow: 5px 5px 18px 0px rgba(0, 0, 0, 0.07);
-  animation: show_cards 2500ms;
+  opacity: 0;
+}
+.menu__box__articles__show1 {
+  animation: show_cards 1000ms forwards;
+  animation-delay: 0.2s;
+}
+.menu__box__articles__show2 {
+  animation: show_cards 1000ms forwards;
+  animation-delay: 0.4s;
+}
+.menu__box__articles__show3 {
+  animation: show_cards 1000ms forwards;
+  animation-delay: 0.6s;
+}
+.menu__box__articles__show4 {
+  animation: show_cards 1000ms forwards;
+  animation-delay: 0.8s;
+}
+.menu__box__articles__show5 {
+  animation: show_cards 1000ms forwards;
+  animation-delay: 1s;
+}
+.menu__box__articles__show6 {
+  animation: show_cards 1000ms forwards;
+  animation-delay: 1.2s;
+}
+.menu__box__articles__show7 {
+  animation: show_cards 1000ms forwards;
+  animation-delay: 1.4s;
+}
+.menu__box__articles__show8 {
+  animation: show_cards 1000ms forwards;
+  animation-delay: 1.6s;
+}
+.menu__box__articles__show9 {
+  animation: show_cards 1000ms forwards;
+  animation-delay: 1.8s;
+}
+.menu__box__articles__show10 {
+  animation: show_cards 1000ms forwards;
+  animation-delay: 2s;
 }
 .menu__box__articles:hover .menu__box__articles__checkbox {
   display: flex;
