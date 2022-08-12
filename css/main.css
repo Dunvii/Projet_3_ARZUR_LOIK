@@ -545,15 +545,15 @@ footer .fa-handshake-angle {
 }
 .menu__box__show1 {
   animation: show_cards 1000ms forwards;
-  animation-delay: 0.2s;
+  animation-delay: 0.4s;
 }
 .menu__box__show2 {
   animation: show_cards 1000ms forwards;
-  animation-delay: 0.4s;
+  animation-delay: 0.8s;
 }
 .menu__box__show3 {
   animation: show_cards 1000ms forwards;
-  animation-delay: 0.6s;
+  animation-delay: 1.2s;
 }
 .menu__box__articles {
   display: flex;

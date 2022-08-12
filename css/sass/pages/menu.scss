@@ -54,7 +54,7 @@
         @for $q from 1 through 3 {
             &__show#{$q} {
                 animation: show_cards 1000ms forwards;
-                animation-delay: $q * 0.2s;
+                animation-delay: $q * 0.4s;
             }
         }
         &__articles {
