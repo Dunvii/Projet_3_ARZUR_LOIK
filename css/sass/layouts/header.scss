@@ -25,9 +25,23 @@ header {
         }
     }
     &__gps {
+        display: flex;
         background-color: #eaeaea;
         padding: 20px 0px;
         gap: 5px;
         box-shadow: inset 0px 0px 7px -4px rgba(0,0,0,1);
+        input {
+            border: none;
+            background-color: #eaeaea;
+            font-size: 16px;
+            padding: 0;
+        }
+        input::placeholder {
+            color: black;
+            opacity: 1;
+        }
+        input:focus {
+        outline: none;
+        }
     }
 }

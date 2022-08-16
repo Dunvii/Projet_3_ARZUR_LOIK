@@ -124,10 +124,24 @@ header {
   top: 40%;
 }
 .top__gps {
+  display: flex;
   background-color: #eaeaea;
   padding: 20px 0px;
   gap: 5px;
   box-shadow: inset 0px 0px 7px -4px rgb(0, 0, 0);
+}
+.top__gps input {
+  border: none;
+  background-color: #eaeaea;
+  font-size: 16px;
+  padding: 0;
+}
+.top__gps input::placeholder {
+  color: black;
+  opacity: 1;
+}
+.top__gps input:focus {
+  outline: none;
 }
 
 footer {
@@ -415,6 +429,13 @@ footer .fa-handshake-angle {
 }
 .step__precard > li > div i {
   color: grey;
+  min-width: 10%;
+  display: flex;
+  justify-content: flex-end;
+}
+.step__precard > li > div h3 {
+  flex-grow: 1;
+  max-width: 90%;
 }
 .step__precard > li div:hover {
   background-color: #f2eafb;
@@ -578,57 +599,57 @@ footer .fa-handshake-angle {
 }
 
 .articles__show1 {
-  animation: show_cards 1000ms forwards;
+  animation: show_cards 500ms forwards;
   animation-delay: 0.2s;
 }
 
 .articles__show2 {
-  animation: show_cards 1000ms forwards;
+  animation: show_cards 500ms forwards;
   animation-delay: 0.4s;
 }
 
 .articles__show3 {
-  animation: show_cards 1000ms forwards;
+  animation: show_cards 500ms forwards;
   animation-delay: 0.6s;
 }
 
 .articles__show4 {
-  animation: show_cards 1000ms forwards;
+  animation: show_cards 500ms forwards;
   animation-delay: 0.8s;
 }
 
 .articles__show5 {
-  animation: show_cards 1000ms forwards;
+  animation: show_cards 500ms forwards;
   animation-delay: 1s;
 }
 
 .articles__show6 {
-  animation: show_cards 1000ms forwards;
+  animation: show_cards 500ms forwards;
   animation-delay: 1.2s;
 }
 
 .articles__show7 {
-  animation: show_cards 1000ms forwards;
+  animation: show_cards 500ms forwards;
   animation-delay: 1.4s;
 }
 
 .articles__show8 {
-  animation: show_cards 1000ms forwards;
+  animation: show_cards 500ms forwards;
   animation-delay: 1.6s;
 }
 
 .articles__show9 {
-  animation: show_cards 1000ms forwards;
+  animation: show_cards 500ms forwards;
   animation-delay: 1.8s;
 }
 
 .articles__show10 {
-  animation: show_cards 1000ms forwards;
+  animation: show_cards 500ms forwards;
   animation-delay: 2s;
 }
 
 .articles__show11 {
-  animation: show_cards 1000ms forwards;
+  animation: show_cards 500ms forwards;
   animation-delay: 2.2s;
 }
 
@@ -674,7 +695,8 @@ footer .fa-handshake-angle {
   background: linear-gradient(180deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: all 0.9s;
+  animation: hearth 500ms forwards;
+  cursor: pointer;
 }
 .menu__box {
   display: flex;

@@ -9,7 +9,7 @@
 
 @for $time from 1 through 11 {
     .articles__show#{$time} {
-        animation: show_cards 1000ms forwards;
+        animation: show_cards 500ms forwards;
         animation-delay: $time * 0.2s;
     }
 }
@@ -56,11 +56,12 @@
 
         &__icon:hover .fa-solid {
             display: inline;
-            background: rgb(147, 86, 220);
-            background: linear-gradient(180deg, rgba(147, 86, 220, 1) 0%, rgba(255, 121, 218, 1) 100%);
+            background: rgb(147,86,220);
+            background: linear-gradient(180deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            transition: all 0.9s;
+            animation: hearth 500ms forwards;
+            cursor: pointer;
         }
     }
 
