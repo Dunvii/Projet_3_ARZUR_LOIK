@@ -74,7 +74,7 @@
         list-style-type: none;
         gap: 20px;
     }
-    > h1 {
+    > h2 {
         margin-left: 5%;
         font-weight: bold;
     }
@@ -227,11 +227,29 @@
 }
 
 @media screen and (min-width: 768px) {
+    .step {
+        padding: 2% 0%;
+        > h2 {
+            margin-left: 7%;
+        }
+        &__precard {
+            gap: 30px;
+            > li {
+                > div {
+                    box-shadow: 0px 0px 19px -3px rgba(0, 0, 0, 0.3);
+                }
+            }
+        }
+    }
     .restaurants {
         &__precard {
             flex-flow: row wrap;
             gap: 50px;
             justify-content: center;
+        }
+        &__title {
+            margin-left: 8%;
+            font-weight: bold;
         }
         &__card {
             width: 40%;
@@ -246,9 +264,14 @@
     }
 
     .step {
+        margin: 2% 2% 4% 2%;
         padding: 0% 0%;
+        h2 {
+            margin-left: 2%;
+        }
         &__precard {
             flex-direction: row;
+            justify-content: space-between;
             > li {
                 width: 30%;
             }
@@ -259,12 +282,14 @@
         &__precard {
             flex-flow: row;
             justify-content: space-around;
-            margin: 0% 2%;
+            margin: 0% 4%;
         }
         &__title {
-            margin-left: 2%;
+            margin-left: 4%;
+            font-weight: bold;
         }
         &__card {
+            height: 200px;
         }
     }
 }

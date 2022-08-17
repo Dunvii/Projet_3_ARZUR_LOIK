@@ -318,6 +318,7 @@ footer .fa-handshake-angle {
   background: linear-gradient(180deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 100%);
   font-size: 15px;
   font-weight: bold;
+  box-shadow: 0px 10px 77px -36px rgba(0, 0, 0, 0.5);
 }
 .btn__menu {
   padding: 15px 40px;
@@ -329,6 +330,7 @@ footer .fa-handshake-angle {
   transition-property: transform;
   transition-duration: 200ms;
   cursor: pointer;
+  box-shadow: 0px 10px 77px -15px rgba(0, 0, 0, 0.5);
 }
 
 .loader {
@@ -404,7 +406,7 @@ footer .fa-handshake-angle {
   list-style-type: none;
   gap: 20px;
 }
-.step > h1 {
+.step > h2 {
   margin-left: 5%;
   font-weight: bold;
 }
@@ -552,10 +554,26 @@ footer .fa-handshake-angle {
 }
 
 @media screen and (min-width: 768px) {
+  .step {
+    padding: 2% 0%;
+  }
+  .step > h2 {
+    margin-left: 7%;
+  }
+  .step__precard {
+    gap: 30px;
+  }
+  .step__precard > li > div {
+    box-shadow: 0px 0px 19px -3px rgba(0, 0, 0, 0.3);
+  }
   .restaurants__precard {
     flex-flow: row wrap;
     gap: 50px;
     justify-content: center;
+  }
+  .restaurants__title {
+    margin-left: 8%;
+    font-weight: bold;
   }
   .restaurants__card {
     width: 40%;
@@ -566,10 +584,15 @@ footer .fa-handshake-angle {
     padding: 5% 0% 5% 0%;
   }
   .step {
+    margin: 2% 2% 4% 2%;
     padding: 0% 0%;
+  }
+  .step h2 {
+    margin-left: 2%;
   }
   .step__precard {
     flex-direction: row;
+    justify-content: space-between;
   }
   .step__precard > li {
     width: 30%;
@@ -577,10 +600,14 @@ footer .fa-handshake-angle {
   .restaurants__precard {
     flex-flow: row;
     justify-content: space-around;
-    margin: 0% 2%;
+    margin: 0% 4%;
   }
   .restaurants__title {
-    margin-left: 2%;
+    margin-left: 4%;
+    font-weight: bold;
+  }
+  .restaurants__card {
+    height: 200px;
   }
 }
 .box__show1 {
