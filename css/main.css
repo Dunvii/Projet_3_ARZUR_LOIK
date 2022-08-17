@@ -778,6 +778,13 @@ footer .fa-handshake-angle {
 }
 
 @media screen and (min-width: 768px) {
+  .menu__title {
+    padding: 5% 5% 0% 5%;
+    justify-content: space-between;
+  }
+  .menu__title__icon {
+    position: static;
+  }
   .menu__box {
     margin: 2% 5%;
   }
@@ -793,10 +800,9 @@ footer .fa-handshake-angle {
     gap: 0;
   }
   .menu__title {
+    justify-content: space-between;
     width: 100%;
-    top: -30px;
-    padding: 2% 0% 0% 8%;
-    gap: 20px;
+    padding: 2% 8% 0% 8%;
   }
   .menu__title__icon {
     position: static;
