@@ -135,6 +135,7 @@ header {
   background-color: #eaeaea;
   font-size: 16px;
   padding: 0;
+  width: 110px;
 }
 .top__gps input::placeholder {
   color: black;
